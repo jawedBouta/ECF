@@ -1,0 +1,87 @@
+/* ARTICLE */
+
+#meals-by-categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meals-by-categorie #main-container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#meals-by-categorie .container-categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20vw;
+    margin: 10px 10px;
+    
+    transition: transform 0.3s ease;
+}
+
+#meals-by-categorie .container-categorie p {
+    font-size: 1.4em;
+    height: 100px;
+    color: var(--color-blue);
+    display: flex;
+    align-items: end;
+    text-align: center;
+}
+
+#meals-by-categorie .container-categorie:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+#meals-by-categorie .container-categorie img {
+    width: 100%;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+@media(max-width: 992px) {
+
+    #meals-by-categorie .container-categorie {
+        width: 30vw;
+    }
+
+}
+
+
+@media(max-width: 992px) {
+
+    #meals-by-categorie h1 {
+        font-size: 1.5em;
+    }
+
+    #meals-by-categorie .container-categorie {
+        width: 30vw;
+    }
+
+    #meals-by-categorie .container-categorie p {
+        font-size: 1.3em;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    #meals-by-categorie h1 {
+        font-size: 1.3em;
+    }
+
+    #meals-by-categorie .container-categorie {
+        width: 130px;
+    }
+
+    #meals-by-categorie .container-categorie p {
+        font-size: 1.1em;
+    }
+
+}
+

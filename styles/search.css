@@ -1,0 +1,172 @@
+#search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-search-by-name {
+    width: 50vw;
+}
+
+#container-btns {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+/*
+#btn-search-by-name {
+    background-color: red;
+} */
+
+
+#article-search-by-meal-name {
+    margin: 10vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+/* Conteneurs img  */
+
+#article-search-by-meal-name  > div {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    width: 500px;
+
+    margin: 2vh 0;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 1em;
+
+    overflow: hidden;
+}
+
+#article-search-by-meal-name > div:hover {
+    transform: translateY(-10px);
+}
+
+/* CONTENEURS TEXT  */
+#article-search-by-meal-name div > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#article-search-by-meal-name img {
+    width: 50%;
+    border-right: 2px solid black;
+    border-top-left-radius: 1em;
+}
+
+#article-search-by-meal-name div p {
+    text-align:center;
+}
+
+#article-search-by-meal-name strong {
+    color: var(--color-blue);
+}
+
+
+#search-section input {
+    margin: 2vh 0;
+
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: white;
+    width: 400px;
+    height: 3vh;
+
+    font-size: 1em;
+    padding: 1vh 1vw;
+
+    color: var(--color-blue);
+}
+
+#search-section input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+
+#search-section input:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-blue) ; 
+    -webkit-box-shadow: 0 0 0 30px white inset ; 
+}
+
+#search-section button {
+    width: 200px;
+    height: 4vh;
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+
+#search-section button:hover {
+    background-color: var(--color-light-blue);
+}
+
+
+@media(max-width: 992px) { 
+
+
+    #article-search-by-meal-name  > div {
+        width: 400px;
+    }
+
+    #search-section button {
+        width: 150px;
+    }
+
+    #search-section input {
+        width: 300px;
+    }
+
+    #container-btns {
+        width: 100vw;
+     
+    }
+}
+
+@media(max-width: 768px) { 
+
+    #search-section button {
+        width: 150px;
+    }
+
+    #search-section input {
+        width: 300px;
+    }
+
+    #container-btns {
+        width: 100vw;
+    
+    }
+
+    #search-section h1 {
+        font-size: 1.3em;
+    }
+
+    #article-search-by-meal-name div p {
+        font-size: 1.2em;
+    }
+
+    #article-search-by-meal-name {
+        width: 80vw;
+    }
+
+    #article-search-by-meal-name  > div {
+        width: 350px;
+    }
+}

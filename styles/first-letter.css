@@ -1,0 +1,133 @@
+main {
+    min-height: 70vh;
+}
+
+#container-search-by-letters {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#first-letter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-letter-section > h1 {
+    width: 30vw;
+}
+
+#first-letter-section p strong {
+    color: var(--color-blue);
+    text-transform: uppercase;
+}
+
+#container-search-by-letters p {
+    margin: 3vw 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.5s ease;
+}
+#container-search-by-letters p:hover {
+   color: var(--color-blue);
+   font-weight: 800;
+   text-transform: uppercase;
+   font-size: 1.5em;
+   transform: translateY(-3px);
+}   
+
+
+#article-meals-by-letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.container-meals-by-letters p {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    color: var(--color-blue);
+    font-size: 1.4em;
+}
+
+.container-meals-by-letters {
+    margin: 0 2vw;
+    width: 20vw;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-meals-by-letters:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.container-meals-by-letters img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+
+@media(max-width: 992px) {
+
+
+    .container-meals-by-letters {
+        width: 17vw;
+        margin: 2vh 2vw;
+    }
+
+    #text-result-search {
+        font-size: 1.2em;
+    }
+
+    #container-search-by-letters p {
+        margin: 10px 5px;
+        font-size: 1.2em;
+    }
+
+    #first-letter-section h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+@media(max-width: 768px) {
+
+    #first-letter-section > h1 {
+        width: 50vw;
+    }
+
+    .container-meals-by-letters {
+        width: 25vw;
+        margin: 3vh 3vw;
+    }
+
+    .container-meals-by-letters p {
+        font-size: 1.3em;
+    }
+
+    #text-result-search {
+        font-size: 1.0em;
+    }
+
+    #container-search-by-letters p {
+        margin: 10px 3px;
+        font-size: 1.1em;
+    }
+
+    #first-letter-section h1 {
+        font-size: 1.3em;
+    }
+}
+
+

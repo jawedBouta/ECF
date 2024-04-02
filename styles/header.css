@@ -1,0 +1,36 @@
+/* header nav a {
+    
+} */
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    margin: 10px 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+header a:hover {
+    text-decoration: underline;
+
+}
+
+@media(max-width: 992px) {
+    header a {
+        font-size: 1.3em;
+    }
+}
+
+
+@media(max-width: 768px) {
+    header a {
+        font-size: 1.1em;
+        font-weight: 700;
+        margin: 10px 3px;
+    }
+}

@@ -1,0 +1,47 @@
+@import url(./styles/header.css);
+@import url(./styles/categorie.css);
+@import url(./styles/first-letter.css);
+@import url(./styles/search.css);
+@import url(./styles/index.css);
+@import url(./styles/variables.css);
+@import url(./styles/categories.css);
+@import url(./styles/meal.css);
+@import url(./styles/areas.css);
+@import url(./styles/area.css);
+@import url(./styles/ingredient.css);
+@import url(./styles/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,h1,h2,h3,a,button, label, input {
+    font-family: var(--font);
+}
+
+h1 {
+    font-weight: 600;
+    margin: 5vh 0;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+
+p {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+button {
+    font-size: 1em;
+    font-weight: 700;
+}

@@ -1,0 +1,252 @@
+
+#meal-section {
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#meal-section strong, span {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--color-blue);
+}
+
+#source span {
+    color: black;
+}
+
+
+#meal-section #container-meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+}
+
+#categorie-recipe, #area-recipe{
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+}
+
+#categorie-recipe:hover, #area-recipe:hover {
+    transform: translateY(-5px);
+}
+
+#categorie-recipe strong:hover, #area-recipe strong:hover {
+    cursor: pointer;
+}
+
+
+#meal-section h1 {
+    font-weight: 400;
+    font-size: 2em;
+    width: 30vw;
+    margin: 1vh 0;
+}
+
+#meal-section img {
+    width: 250px;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+
+#instruction-recipe {
+    font-weight: 500;
+    font-size: 1.1em;
+    width: 100%;
+    margin: 3vh 0;
+    text-align:justify;
+    white-space: pre-line;
+    line-height: 1.3;
+}
+
+
+#meal-section #container-meal > a {
+    color: black;
+    font-size: 1.2em;
+    margin: 0 0.3vw 0 0;
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+#meal-section #container-meal > a > span {
+   color: black;
+}
+
+
+/* PARTIE INGREDIENTS */
+
+#container-ingredients {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 500px;
+
+    border-left: 2px solid black;
+}
+
+#container-ingredients > p {
+    font-weight: 400;
+    font-size: 3em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#container-ingredients #content-ingredients p {
+    font-size: 1.5em;
+    font-weight: 600;
+    /* margin: 0 0 0 5vw; */
+    cursor: pointer;
+    color: green;
+    transition: transform 0.5s ease;
+}
+#container-ingredients #content-ingredients p:hover {
+    transform: translateY(-5px);
+}
+
+
+/* PARTIE DESCRIPTIONS  */
+
+#meal-descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#meal-descriptions #container-description-recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+#container-description-recipe p  {
+    font-weight: 400;
+    font-size: 1.2em;
+    width: 800px;
+    text-align: justify;
+    
+}
+
+#meal-descriptions a  {
+    text-decoration: none;
+    color: var(--color-blue);
+    width: 800px;
+    text-overflow: ellipsis;
+}
+
+#meal-descriptions iframe {
+    height: 350px;
+    width: 750px;
+    margin: 70px 0;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+
+/* #youtube {
+    background-color: red;
+    width: 800px;
+    height: 400px;
+} */
+
+@media(max-width: 992px) {
+
+    #container-ingredients {
+        width: 400px;
+    }
+
+    #container-ingredients > p {
+        font-size: 2.0em;
+    }
+
+    #container-meal h1 {
+        font-size: 2.0em;
+    }
+
+    #container-description-recipe p {
+        width: 600px;
+    }
+
+    #meal-section #container-meal {
+        width: 400px;
+    }
+
+    #meal-descriptions a {
+        width: 600px;
+    }
+
+    #meal-section img { 
+        width: 200px;
+    }
+
+    #meal-descriptions iframe {
+        height: 300px;
+        width: 600px;
+    }
+    
+}
+
+
+@media(max-width: 768px) {
+
+    #meal-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-meal > p {
+        font-size: 1.3em;
+    }
+
+    #meal-descriptions iframe {
+        height: 225px;
+        width: 450px;
+    }
+
+    #container-ingredients {
+        margin-top: 100px;
+        width: 100%;
+        padding: 0 30px;
+        border: none;
+    }
+    #meal-section #container-meal {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #container-ingredients > p {
+        font-size: 1.6em;
+    }
+
+    #container-ingredients #content-ingredients p {
+        font-size: 1.4em;
+    }
+
+    #container-meal h1 {
+        width: 100%;
+        font-size: 2em;
+    }
+
+    #container-description-recipe p {
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    #meal-descriptions a {
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    #meal-section img { 
+        width: 200px;
+    }
+
+    
+
+}

@@ -47,6 +47,7 @@ main {
 
 
 .container-meals-by-letters p {
+    margin-top: 20px;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -58,7 +59,7 @@ main {
 
 .container-meals-by-letters {
     margin: 0 2vw;
-    width: 20vw;
+    width: 300px;
     transition: transform 0.5s ease;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ main {
 
 
     .container-meals-by-letters {
-        width: 17vw;
+        width: 200px;
         margin: 2vh 2vw;
     }
 
@@ -108,8 +109,8 @@ main {
     }
 
     .container-meals-by-letters {
-        width: 23vw;
-        margin: 7vh 3vw;
+        width: 200px;
+        margin: 20px 20px;
     }
 
     .container-meals-by-letters p {

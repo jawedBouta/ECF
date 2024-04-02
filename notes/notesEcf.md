@@ -11,33 +11,27 @@
 - mettre en figure le logo
 - logo
 - header à mettre dans composant
-
 - revoir les alt = "" (et ajouter dans le js quand nécessaire)
 - ajouter les title sur les img
 - css à retirer du JS (à part le link de la page areas)
 - redirection sur les pages comme la page ingredient s'il n'y a pas d'input (comme j'ai déjà fait sur certaines pages)
-
-
 - Changer les vw / vh quand nécessaire 
-
-- padding ingrédients (dans meal)
-- revoir dans meal l'alignement de "ingrédients" et le titre de la recette
-- revoir les distances en hauteur dans l'index par ex (responsive)
 - first letter à refaire pour du 500px
+- revoir les distances en hauteur dans l'index par ex (responsive)
+- padding ingrédients (dans meal)
+- cursor sur le container dans meal (ingrédient) à retirer
+- revoir dans meal l'alignement de "ingrédients" et le titre de la recette
+
+
 
 
 # Non fait 
 - mettre des h2 quand nécessaire (w3c) : demande un H2 dans chaque session, me demande du temps pr le refaire
-
+- les img avec des figures
 
 # idées / bugs 
-- revoir la sémantique
-- est ce que je mets des figure pour les img ?
-
 - les img en bleus du type titre de plat, etc dans les pages, vérifier que c'est elle qui se cut (resonsive)
 > Est ce qu'il est possible de faire en sorte quand un conteneur coupe un texte, d'en prioriser certains
 > voir notes eleonore
 
-# responsive
-- revenir sur les textes trop grands dans first letters (quand je suis en petite réso)
-- chnger les margin pour les wraper si nécessaire
+

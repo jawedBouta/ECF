@@ -2,12 +2,17 @@ async function getMealsByArea() {
     const searchParams = new URLSearchParams(window.location.search);
     let queryUrl = searchParams.get('input');
 
+    // redirection
+    if(!queryUrl) return redirectToIndex();
+
     // sélection de conteneurs
     const divMain = document.querySelector('#container-meals-by-area');
     const h1 = document.querySelector('h1');
     
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${queryUrl}`);
     const dataMealsByArea = data.meals;
+    
+    // redirection
     if(!dataMealsByArea) return redirectToIndex();
 
     //h1 text

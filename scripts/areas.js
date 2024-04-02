@@ -30,11 +30,7 @@ async function generateIngredients() {
             alt: element.strArea
         });
 
-
         imgFlag.style.backgroundImage  = `url(${flagUrl})`;
-        imgFlag.style.backgroundPosition = 'center';
-        imgFlag.style.backgroundSize = 'cover';
-        imgFlag.style.backgroundRepeat = 'no-repeat';
 
         imgFlag.addEventListener('click', () => {
             window.location.href = `/pages/area.html?input=${element.strArea}`;

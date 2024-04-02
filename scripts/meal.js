@@ -2,10 +2,13 @@
 async function getMealById() {
     const searchParams = new URLSearchParams(window.location.search);
     const paramUrl = searchParams.get('input');
+
+    // redirection sur un random
     if(!paramUrl) return await redirectionOnRandomMeal();
 
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${paramUrl}`);
 
+    // redirection sur un random
     if(!data.meals) return await redirectionOnRandomMeal();
 
     const dataMeal = data.meals[0];

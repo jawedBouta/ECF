@@ -3,7 +3,9 @@ const mainContainer = document.querySelector('#main-container-meals');
 
 async function generateListMealsByIngredient() {
     const paramyUrl = new URLSearchParams(window.location.search).get('name');
-    //if(!paramyUrl) return null;
+    
+    // redirection
+    if(!paramyUrl) return redirectToIndex();
     console.log(paramyUrl);
 
     // h1 
@@ -12,6 +14,10 @@ async function generateListMealsByIngredient() {
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${paramyUrl}`);
     console.log(data);
     const dataMeals = data.meals;
+
+    // redirection
+    if(!dataMeals) return redirectToIndex();
+
     dataMeals.forEach(meal => {
 
         // conteneur

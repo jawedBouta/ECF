@@ -16,6 +16,11 @@ qu'on sache s'il n'y a aucune donnée
 - le chiffre des résulats en couleur sur A-Z et Recherche
 - mettre le même H1 pour tous
 
+- certaines pages sur le bas s'arrête net, ne pas oublier de mettre un footer
+- sur la page meal, le trait horizontale n'a pas l'air au milieu
+peut être à cause des titres
+il faut que je désigne un width, d'ailleurs pour les titres longs aussi
+- img ingrédients ?
 
 
 # A FAIRE : 
@@ -23,15 +28,7 @@ qu'on sache s'il n'y a aucune donnée
 
 
 - module js ?
-- img ingrédients ?
 - changer le terme input pour les url, par query
-
-
-- certaines pages sur le bas s'arrête net, ne pas oublier de mettre un footer
-- sur la page meal, le trait horizontale n'a pas l'air au milieu
-peut être à cause des titres
-il faut que je désigne un width, d'ailleurs pour les titres longs aussi
-
 - revoir les titres sur les recettes au titre trop long
 - page A - Z ne pas oublier le texte 'cliquez sur une lettre'
 - Pour les résultats dans la page recherche, il va falloir gérer quand fetch ne renvoie rien

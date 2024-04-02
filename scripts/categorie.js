@@ -4,10 +4,12 @@ async function getMealsByCategory() {
 
     const searchParams = new URLSearchParams(window.location.search);
     inputMeal = searchParams.get('input')
+    // redirection
     if(!inputMeal) return redirectToIndex();
 
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${inputMeal}`);
     const dataMealsByCategory = data.meals;
+    // redirection
     if(!dataMealsByCategory) return redirectToIndex();
     
     // RESET

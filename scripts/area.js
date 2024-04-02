@@ -25,7 +25,8 @@ async function getMealsByArea() {
             type: 'img',
             src: meal.strMealThumb,
             appendChild: containerArticleMeal,
-            title: meal.strMeal
+            title: meal.strMeal,
+            alt: meal.strMeal
         });
 
         createElement({

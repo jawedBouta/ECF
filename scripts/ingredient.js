@@ -25,7 +25,8 @@ async function generateListMealsByIngredient() {
             type: 'img',
             src: meal.strMealThumb,
             appendChild: containersMeals,
-            title: meal.strMeal
+            title: meal.strMeal,
+            alt: meal.strMeal
         });
 
         // p 

@@ -29,6 +29,7 @@ async function getMealPerFirstLetter (event) {
             const newImg = document.createElement('img');
             newImg.src = element.strMealThumb;
             newImg.title = element.strMeal;
+            newImg.alt = element.strMeal;
             container.appendChild(newImg);
     
             newImg.addEventListener('click', imgClickable);

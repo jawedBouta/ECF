@@ -43,7 +43,8 @@ function genrateElements(data) {
             src: element.strCategoryThumb,
             textContent: element.strCategory,
             appendChild: subContainer,
-            title: element.strCategory
+            title: element.strCategory,
+            alt: element.strMeal
         });
 
         createElement({

@@ -24,6 +24,7 @@ async function getMealById() {
     //img
     imgMealElement.src = dataMeal.strMealThumb;
     imgMealElement.title = dataMeal.strMeal;
+    imgMealElement.alt = dataMeal.strMeal;
 
     //titre
     titleMealElement.textContent = dataMeal.strMeal;

@@ -26,7 +26,8 @@ async function generateIngredients() {
         const imgFlag = createElement({
             type: 'div',
             appendChild: containerElements,
-            title: element.strArea
+            title: element.strArea,
+            alt: element.strArea
         });
 
 

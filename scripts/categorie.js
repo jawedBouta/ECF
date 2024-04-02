@@ -47,7 +47,8 @@ async function getMealsByCategory() {
             type : 'img',
             src: element.strMealThumb,
             appendChild: containerElements,
-            title: element.strMeal
+            title: element.strMeal,
+            alt: element.strMeal
         })
 
         // l'event clique

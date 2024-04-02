@@ -5,8 +5,6 @@ async function generateIngredients() {
    
     const dataAreas = data.meals;
 
-    console.log(dataAreas);
-
     dataAreas.forEach(async element => {
 
         let flagUrl = null;

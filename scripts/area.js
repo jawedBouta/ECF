@@ -24,7 +24,8 @@ async function getMealsByArea() {
         createElement({
             type: 'img',
             src: meal.strMealThumb,
-            appendChild: containerArticleMeal
+            appendChild: containerArticleMeal,
+            title: meal.strMeal
         });
 
         createElement({
@@ -37,8 +38,6 @@ async function getMealsByArea() {
             window.location.href = `/pages/meal.html?input=${meal.strMeal}`;
         });
     });
-
-    console.log(dataMealsByArea);
 }
 
 getMealsByArea();

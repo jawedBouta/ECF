@@ -10,11 +10,8 @@ generateLetters();
 
 async function getMealPerFirstLetter (event) {
 
-    console.log('test');
     divlistMeals.innerHTML = "";
-    console.log(event.target.innerText);
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${event.target.innerText}`);
-    console.log(data);
     
     const dataMeals = data.meals;
     const countResultsSearch = (dataMeals) ? dataMeals.length : 0;

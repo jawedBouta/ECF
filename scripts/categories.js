@@ -5,8 +5,6 @@ async function getMealsCategories() {
     const data = await getDataFetch('https://www.themealdb.com/api/json/v1/1/categories.php');
     const dataCategories = data.categories;
 
-    console.log(dataCategories);
-
     genrateElements(dataCategories);
 
     return dataCategories;
@@ -37,13 +35,15 @@ function genrateElements(data) {
             class: 'container-content',
             index: element.strCategory,
             appendChild: mainContainerContent
+            
         });
 
         createElement({
             type: 'img',
             src: element.strCategoryThumb,
             textContent: element.strCategory,
-            appendChild: subContainer
+            appendChild: subContainer,
+            title: element.strCategory
         });
 
         createElement({

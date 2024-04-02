@@ -2,6 +2,20 @@ function crateHeader() {
     const header = document.querySelector('header');
     const nav = document.createElement('nav');
 
+
+    // Logo
+    const figureLogo = createElementHeader({
+        type: 'figure',
+        appendChild: nav
+    });
+
+    createElementHeader({
+        type: 'img',
+        textContent: 'Accueil',
+        src: "/public/images/cooking-logo.jpg",
+        appendChild: figureLogo
+    });
+
     // Accueil
     createElementHeader({
         type: 'a',
@@ -38,7 +52,7 @@ function crateHeader() {
      // Zone géographique
      createElementHeader({
         type: 'a',
-        textContent: 'Zones géographique',
+        textContent: 'Zones',
         href: "/pages/areas.html",
         appendChild: nav
     });

@@ -9,13 +9,21 @@ function createElement (param) {
         element.textContent = param.textContent;
     }
 
+    if (param.title) {
+        element.title = param.title;
+    }
+
     if (param.innerHTML) {
         element.innerHTML = param.innerHTML;
     }
+    
 
     if (param.src) {
         element.src = param.src;
     }
+
+    if (param.alt) element.alt = param.alt;
+    
 
     if (param.href) {
         element.href = param.href;

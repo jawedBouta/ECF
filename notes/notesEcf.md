@@ -1,5 +1,12 @@
 
 # FAIT
+
+- logo
+- css à retirer du JS
+- Changer les vw / vh quand nécessaire 
+
+- redirection sur les pages comme la page ingredient s'il n'y a pas d'input (comme j'ai déjà fait sur certaines pages)
+
 - Refaire boutons cliquables de l'index
 - Erreurs youtube à régler ou retirer ce concept
 - vérifier si je n'ai laissé des style dans les html
@@ -29,5 +36,4 @@
 
 # responsive
 - revenir sur les textes trop grands dans first letters (quand je suis en petite réso)
-- Changer les vw / vh quand nécessaire 
 - chnger les margin pour les wraper si nécessaire

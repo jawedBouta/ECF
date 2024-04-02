@@ -48,8 +48,6 @@ function generateElementsMeal (dataMeal) {
         appendChild: article
     });
 
-    console.log(dataMeal);
-
     dataMeal.forEach(meal => {
         // conteneur text + img
         const containerElements = createElement({

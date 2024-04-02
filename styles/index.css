@@ -57,7 +57,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 200px; */
 } 
 
 #by-categorie > .container-text-categories, #by-letters > .container-text-categories {
@@ -126,13 +125,18 @@
 
 @media(max-width: 768px) {
 
+    #by-categorie > div, #by-area > div, #by-letters > div {
+        width: 220px;
+    }
+
 
     #by-categorie > .container-text-categories, #by-letters > .container-text-categories {
         order: 0;
     }
 
     #welcome-index p, #content-index p {
-        font-size: 0.9em;
+        font-size: 0.95em;
+       
     }
 
     #content-index {
@@ -140,11 +144,11 @@
      }
 
     #content-index button {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     #content-index img  {
-        width: 18vw;
+        width: 150px;
     }
 
     #welcome-index h1 {

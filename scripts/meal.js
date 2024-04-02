@@ -10,8 +10,6 @@ async function getMealById() {
 
     const dataMeal = data.meals[0];
 
-    console.log(dataMeal);
-
     // Sélections des éléments
     const titleMealElement = document.querySelector('#title-meal');
     const imgMealElement = document.querySelector('#img-meal');
@@ -25,6 +23,8 @@ async function getMealById() {
 
     //img
     imgMealElement.src = dataMeal.strMealThumb;
+    imgMealElement.title = dataMeal.strMeal;
+
     //titre
     titleMealElement.textContent = dataMeal.strMeal;
 
@@ -75,11 +75,8 @@ async function getMealById() {
     if(dataMeal.strYoutube) {
         const idYoutube = youtube_parser(dataMeal.strYoutube);
         youtube.src = `https://www.youtube.com/embed/${idYoutube}`;
-        // youtube.style.width = "700px";
-        // youtube.style.height = "350px";
     }
 }
-
 
 function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
@@ -91,6 +88,6 @@ try {
     getMealById();
 }
 catch(e) {
-    //console.log(e.message)
+    console.log(e.message)
 }
 

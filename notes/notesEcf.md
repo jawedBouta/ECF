@@ -1,23 +1,31 @@
 
 # FAIT
-
-- logo
-- css à retirer du JS
-- Changer les vw / vh quand nécessaire 
-
-- redirection sur les pages comme la page ingredient s'il n'y a pas d'input (comme j'ai déjà fait sur certaines pages)
-
 - Refaire boutons cliquables de l'index
 - Erreurs youtube à régler ou retirer ce concept
 - vérifier si je n'ai laissé des style dans les html
+- retrait des console.log
+- mettre en figure le logo
+- logo
 - revoir dans meal l'alignement de "ingrédients" et le titre de la recette
+- Changer les vw / vh quand nécessaire 
+- revoir les alt = "" (et ajouter dans le js quand nécessaire)
+- ajouter les title sur les img
 
 
-
+# Non fait 
 - mettre des h2 quand nécessaire (w3c)
+
+
+
+
+#
+- css à retirer du JS
+- redirection sur les pages comme la page ingredient s'il n'y a pas d'input (comme j'ai déjà fait sur certaines pages)
+
+
 - title via js sur le survol des img de plat
 - revoir la sémantique
-- revoir les alt = "" (et ajouter dans le js quand nécessaire)
+
 - est ce que je mets des figure pour les img ?
 
 - header à mettre dans composant

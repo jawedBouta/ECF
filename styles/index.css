@@ -12,7 +12,7 @@
 
 #welcome-index img {
     /* height: 30vh; */
-    width: 20vw;
+    width: 300px;
     border-radius: 1em;
     border: 2px solid black;
     /* object-fit: contain; */
@@ -49,6 +49,8 @@
 
 #by-categorie > div, #by-area > div, #by-letters > div {
     width: 30vw;
+    display: flex;
+    justify-content: center;
 }
 
 /* DIV TEXT CATEGORIE  */
@@ -105,11 +107,15 @@
 
 @media(max-width: 992px) {
 
+    #welcome-index img {
+        width: 200px;
+    }
+
     #by-categorie > .container-text-categories, #by-letters > .container-text-categories {
         order: 0;
      }
 
-     #welcome-index p, #content-index p {
+     #welcome-index h2, #content-index p {
         font-size: 1.2em;
      }
 
@@ -134,8 +140,13 @@
         order: 0;
     }
 
-    #welcome-index p, #content-index p {
-        font-size: 0.95em;
+    #welcome-index h2 {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    #content-index p {
+        font-size: 1em;
        
     }
 

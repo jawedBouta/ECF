@@ -108,12 +108,12 @@ main {
     }
 
     .container-meals-by-letters {
-        width: 25vw;
-        margin: 3vh 3vw;
+        width: 23vw;
+        margin: 7vh 3vw;
     }
 
     .container-meals-by-letters p {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     #text-result-search {

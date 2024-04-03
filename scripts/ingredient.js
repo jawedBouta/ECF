@@ -6,13 +6,12 @@ async function generateListMealsByIngredient() {
     
     // redirection
     if(!paramyUrl) return redirectToIndex();
-    console.log(paramyUrl);
 
     // h1 
     h1.innerHTML = `Voici les recettes qui utilisent l'ingrédient: <strong>${paramyUrl}</strong>`;
 
     const data = await getDataFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${paramyUrl}`);
-    console.log(data);
+   
     const dataMeals = data.meals;
 
     // redirection

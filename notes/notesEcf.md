@@ -23,6 +23,7 @@
 - revoir dans meal l'alignement de "ingrédients" et le titre de la recette
 
 
+- page ingrédient pour "pain flour" - Bakewell tart par ex, trop peu de padding
 
 
 # Non fait 
